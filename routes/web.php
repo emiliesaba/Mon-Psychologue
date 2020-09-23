@@ -11,6 +11,17 @@
 |
 */
 
+Route::get('/admin', function () {
+    return view('authentification');
+});
+
+Auth::routes();
+Route::get('/visiteur', 'visiteursController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+    Route::resource('users','UsersController');
+});
 Route::get('/', function () {
     return view('index1');
 });
