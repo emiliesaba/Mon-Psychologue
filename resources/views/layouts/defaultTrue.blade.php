@@ -39,9 +39,9 @@
   <link href="{{asset('assetsd/css/widgets.css')}}" rel="stylesheet">
   <link href="{{asset('assetsd/css/style.css')}}" rel="stylesheet">
   <link href="{{asset('assetsd/css/monstyle.css')}}" rel="stylesheet">
-  <link href="css/style-responsive.css')}}" rel="stylesheet" />
-  <link href="css/xcharts.min.css')}}" rel=" stylesheet">
-  <link href="css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
+  <link href="{{asset('css/style-responsive.css')}}" rel="stylesheet" />
+  <link href="{{asset('css/xcharts.min.css')}}" rel=" stylesheet">
+  <link href="{{asset('css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
   <!-- =======================================================
     Theme Name: NiceAdmin
     Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -116,9 +116,9 @@
   <!--header end-->
 
     <aside>
-      <div id="sidebar" class="nav-collapse ">
+      <div id="sidebar" class="nav-collapse">
         <!-- sidebar menu start-->
-        <ul class="sidebar-menu">
+        <ul class="sidebar-menu dark-bg">
           <li class="active">
             <a class="" href="/home">
                           <i class="icon_house_alt"></i>
@@ -137,29 +137,16 @@
           <li>
             <a class="" href="widgets.html">
                           <i class="icon_genius"></i>
-                          <span>NIVEAU</span>
+                          <span>Documents</span>
                       </a>
           </li>
           <li>
             <a class="" href="chart-chartjs.html">
                           <i class="icon_piechart"></i>
-                          <span>MATIERE</span>
+                          <span>groupe</span>
 
                       </a>
-
           </li>
-
-          <li class="sub-menu">
-            <a href="javascript:;" class="">
-                          <i class="icon_table"></i>
-                          <span>CALENDRIER</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-            <ul class="sub">
-              <li><a class="" href="basic_table.html">Basic Table</a></li>
-            </ul>
-          </li>
-
           <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_documents_alt"></i>

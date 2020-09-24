@@ -1,7 +1,7 @@
 @extends('layouts.defaultTrue1')
 @section('content')
 <section id="main-content">
- <section class="wrapper">
+ <section class="wrapper couleur">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

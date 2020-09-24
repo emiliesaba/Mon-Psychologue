@@ -9,3 +9,7 @@
     width: 100vh;
     height: 50px;
 }
+
+.couleur{
+    background-image: url({{asset('assets/images/bg.jpg')}});
+}
