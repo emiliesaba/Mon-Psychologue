@@ -13,7 +13,12 @@ class UserCategories extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('user_categories', function (Blueprint $table) {
+        $table->bigIncrements('id');
+        $table->bigInteger('user_id')->unsigned();
+        $table->bigInteger('categorie_id')->unsigned();
+        $table->timestamps();
+    });  
     }
 
     /**
@@ -23,6 +28,6 @@ class UserCategories extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user_categories');
     }
 }

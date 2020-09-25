@@ -13,7 +13,12 @@ class UserDocuments extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('user_documents', function (Blueprint $table) {
+        $table->bigIncrements('id');
+        $table->bigInteger('user_id')->unsigned();
+        $table->bigInteger('document_id')->unsigned();
+        $table->timestamps();
+    });  
     }
 
     /**
@@ -23,6 +28,8 @@ class UserDocuments extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user_documents');
     }
 }
+
+

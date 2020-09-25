@@ -12,9 +12,14 @@ class GroupesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(){
+
+        $this->middleware('auth');
+    }
     public function index()
     {
-        //
+        return view('admin.users.index')->with('users',$users);
+        return view('cartes.liste',compact('cartes','etudiants'));
     }
 
     /**

@@ -13,7 +13,11 @@ class Types extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('types', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('type');
+            $table->timestamps();
+        });   
     }
 
     /**
@@ -23,6 +27,6 @@ class Types extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('types');
     }
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,24 +23,24 @@
 
     <!-- Styles -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link href="{{asset('assetsd/css/elegant-icons-style.css')}}" rel="stylesheet" />
-  <link href="{{asset('assetsd/css/font-awesome.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('asset/css/elegant-icons-style.css')}}" rel="stylesheet" />
+  <link href="{{asset('asset/css/font-awesome.min.css')}}" rel="stylesheet" />
   <!-- full calendar css-->
   <link href="{{asset('assetsd/fullcalendar/fullcalendar/bootstrap-fullcalendar.css')}}" rel="stylesheet" />
   <link href="{{asset('assetsd/fullcalendar/fullcalendar/fullcalendar.css')}}" rel="stylesheet" />
   <!-- easy pie chart-->
   <link href="{{asset('assetsd/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen" />
   <!-- owl carousel -->
-  <link rel="{{asset('assetsd/stylesheet" href="css/owl.carousel.css" type="text/css')}}">
-  <link href="{{asset('assetsD/css/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet">
+  <link rel="{{asset('asset/stylesheet" href="css/owl.carousel.css" type="text/css')}}">
+  <link href="{{asset('asset/css/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet">
   <!-- Custom styles -->
-  <link rel="{{asset('assetsd/stylesheet" href="css/fullcalendar.css')}}">
-  <link href="{{asset('assetsd/css/widgets.css')}}" rel="stylesheet">
-  <link href="{{asset('assetsd/css/style.css')}}" rel="stylesheet">
-  <link href="{{asset('assetsd/css/monstyle.css')}}" rel="stylesheet">
-  <link href="css/style-responsive.css')}}" rel="stylesheet" />
-  <link href="css/xcharts.min.css')}}" rel=" stylesheet">
-  <link href="css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
+  <link rel="{{asset('asset/stylesheet" href="css/fullcalendar.css')}}">
+  <link href="{{asset('asset/css/widgets.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/css/monstyle.css')}}" rel="stylesheet">
+  <link href="{{asset('css/style-responsive.css')}}" rel="stylesheet" />
+  <link href="{{asset('css/xcharts.min.css')}}" rel=" stylesheet">
+  <link href="{{asset('css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
   <!-- =======================================================
     Theme Name: NiceAdmin
     Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/

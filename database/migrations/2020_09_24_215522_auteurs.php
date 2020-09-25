@@ -13,7 +13,11 @@ class Auteurs extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('auteurs', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('nom');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class Auteurs extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('auteurs');
     }
 }

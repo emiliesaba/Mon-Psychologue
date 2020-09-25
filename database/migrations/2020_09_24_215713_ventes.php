@@ -13,7 +13,15 @@ class Ventes extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('ventes', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->bigInteger('type_id')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
+            $table->string('date');
+            $table->integer('quantite');
+            $table->integer('somme');  
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +31,6 @@ class Ventes extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('types');
     }
 }

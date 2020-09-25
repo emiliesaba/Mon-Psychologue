@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
 use App\Document;
 use Illuminate\Http\Request;
 
@@ -12,9 +12,15 @@ class DocumentsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(){
+
+        $this->middleware('auth');
+    }
     public function index()
     {
-        //
+      $documents=Document::all();
+      $user=User::all();
+      return view('documents.index',compact('documents','users'));
     }
 
     /**

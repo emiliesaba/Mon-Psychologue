@@ -13,7 +13,12 @@ class UserSpecialites extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('user_specialites', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('specialite_id')->unsigned();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class UserSpecialites extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user_specialites');
     }
 }

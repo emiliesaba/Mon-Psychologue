@@ -13,7 +13,11 @@ class Typesventes extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('typeventes', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('nom');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class Typesventes extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('typeventes');
     }
 }

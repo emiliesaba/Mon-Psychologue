@@ -46,6 +46,20 @@ class User extends Authenticatable
     }
 
     public function hasAnyRole(array $roles){
-        return $this->roles()->whereIn('name',$roles)->first();
+    return $this->roles()->whereIn('name',$roles)->first();
         }
+
+    public function documents(){
+     return $this->belongsToMany('App\Document');
+    }
+
+    public function categories(){
+     return $this->belongsToMany('App\Categorie');
+       }
+    public function specialites(){
+    return $this->belongsToMany('App\Specialite');
+       }
+
+
+    
 }
