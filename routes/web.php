@@ -23,7 +23,15 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:mana
     Route::resource('users','UsersController');
 });
 
-Route::resource('documents','DocumentsController');
+
+Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+     Route::resource('documents','DocumentsController');
+});
+
+
+
+
+
 Route::get('/', function () {
     return view('index1');
 });

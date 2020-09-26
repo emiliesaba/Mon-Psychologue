@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="csrf-token" content="{{ csrf_token() }}">
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link href="{{asset('asset/img/favicon.png')}}" rel="shortcut icon">
 
   <title>Creative - Bootstrap Admin Template</title>
-  <script src="{{ asset('js/app.js') }}" defer></script>
   <!-- Bootstrap CSS -->
-  <link href="{{asset('assetsd/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link href="{{asset('asset/css/bootstrap.min.css')}}" rel="stylesheet">
   <!-- bootstrap theme -->
-  <link href="{{asset('assetsd/css/bootstrap-theme.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/css/bootstrap-theme.css')}}" rel="stylesheet">
   <!--external css-->
   <!-- font icon -->
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link href="{{asset('asset/css/elegant-icons-style.css')}}" rel="stylesheet" />
-  <link href="{{asset('asset/css/font-awesome.min.css')}}" rel="stylesheet" />
+  <link href="{{asset('asset/css/elegant-icons-style.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/css/font_awesome.min.css')}}" rel="stylesheet">
   <!-- full calendar css-->
-  <link href="{{asset('assetsd/fullcalendar/fullcalendar/bootstrap-fullcalendar.css')}}" rel="stylesheet" />
-  <link href="{{asset('assetsd/fullcalendar/fullcalendar/fullcalendar.css')}}" rel="stylesheet" />
+  <link href="{{asset('assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/fullcalendar/fullcalendar/fullcalendar.css')}}" rel="stylesheet">
   <!-- easy pie chart-->
-  <link href="{{asset('assetsd/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen" />
+  <link href="{{asset('assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen">
   <!-- owl carousel -->
-  <link rel="{{asset('asset/stylesheet" href="css/owl.carousel.css" type="text/css')}}">
+  <link href="{{asset('asset/css/owl.carousel.css')}}" rel="stylesheet" type="text/css">
   <link href="{{asset('asset/css/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet">
   <!-- Custom styles -->
-  <link rel="{{asset('asset/stylesheet" href="css/fullcalendar.css')}}">
+  <link href="{{asset('asset/css/fullcalendar.css')}}" rel="stylesheet">
   <link href="{{asset('asset/css/widgets.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/css/style-responsive.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/css/xcharts.min.css')}}" rel="stylesheet">
+  <link href="{{asset('asset/css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
   <link href="{{asset('asset/css/style.css')}}" rel="stylesheet">
   <link href="{{asset('asset/css/monstyle.css')}}" rel="stylesheet">
   <link href="{{asset('css/style-responsive.css')}}" rel="stylesheet" />
-  <link href="{{asset('css/xcharts.min.css')}}" rel=" stylesheet">
-  <link href="{{asset('css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
   <!-- =======================================================
     Theme Name: NiceAdmin
     Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -133,7 +128,7 @@
           </li>
           @endcan
           <li>
-            <a class="" href="{{route('documents.index')}}">
+            <a class="" href="{{route('admin.documents.index')}}">
                           <i class="icon_genius"></i>
                           <span>Documents</span>
                       </a>

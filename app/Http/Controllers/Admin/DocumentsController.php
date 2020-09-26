@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
-use App\User;
+namespace App\Http\Controllers\Admin;
+use App\Auteur;
 use App\Document;
+use App\User;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class DocumentsController extends Controller
@@ -20,7 +22,8 @@ class DocumentsController extends Controller
     {
       $documents=Document::all();
       $user=User::all();
-      return view('admin.documents.index',compact('documents','users'));
+      $user=Auteur::all();
+      return view('admin.documents.index',compact('documents','users','auteurs'));
     }
 
     /**
@@ -30,7 +33,10 @@ class DocumentsController extends Controller
      */
     public function create()
     {
-        //
+        $documents=Document::all();
+        $user=User::all();
+        $acteur=Auteur::all();
+        return view('admin.documents.create',compact('documents','users'));
     }
 
     /**
@@ -41,7 +47,22 @@ class DocumentsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
+        //  request()->validate([
+        //     'titre'=> ['required','string'],
+        //     'image'=> ['required','image'],
+        //     'prix'=> ['required','string'],
+        //     'lien'=> ['required','string'],
+           
+        //   ]);
+        //   $imagePath=request('image')->store('uploads','public');
+          Document::create([
+              'titre'=>$request[ 'titre'],
+            //   'image'=>$imagePath,
+              'prix'=>$request[ 'prix'],
+              'lien'=>$request[ 'lien']
+              ]);      
+             
     }
 
     /**
@@ -75,7 +96,7 @@ class DocumentsController extends Controller
      */
     public function update(Request $request, Document $document)
     {
-        //
+      //
     }
 
     /**

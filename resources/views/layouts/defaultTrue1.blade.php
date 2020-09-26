@@ -9,7 +9,8 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Creative - Bootstrap Admin Template</title>
+  <title>Mon Psychologue_Dashbord</title>
+  <link href="{{asset('assets/img/img7.png')}}" rel="icon">
   <script src="{{ asset('js/app.js') }}" defer></script>
   <!-- Bootstrap CSS -->
   <link href="{{asset('assetsd/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -53,13 +54,13 @@
   <!-- container section start -->
  <section id="container" class="">
 
-  <header class="header dark-bg">
+  <header class="header  white-bg">
     <div class="toggle-nav">
       <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
     </div>
 
     <!--logo start-->
-    <a href="index.html" class="logo">EMPLOI DU <span class="lite">TEMPS</span></a>
+    <a href="index.html" class="logo text-success">Mon <span class="text-success">Psychologue</span></a>
     <!--logo end-->
 
     <div class="nav search-row" id="top_menu">
